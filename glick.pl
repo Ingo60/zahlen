@@ -179,9 +179,9 @@ sub neuertip12ausX6 {
 	print S "# {@qz}\r\n";
 	foreach my $t(@neu) {
 		printf S "%3d%3d%3d%3d%3d%3d\r\n",
-			(map { $t->[$_] } 0..5),
+			(map { $t->[$_] } 0..5);
 			# (map { Pz($t->[$_])/100 } 1..6),
-			$t->[0];
+			#$t->[0];
 	}
 	close(S);
 	print STDERR "\n";
